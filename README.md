@@ -1,4 +1,4 @@
-# Crypto financial simpl rest application
+# Crypto financial simple rest application
 Web application development (project demo) :
 - backend on Java (Spring Boot, Maven + Lombok)
 - database container Docker
