@@ -1,0 +1,26 @@
+# ===============================
+# [ Spring Properties ]
+# ===============================
+spring:
+  jpa:
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5434/crypto?user=crypto&password=crypto
+
+logging:
+  file.name: logs/log.log
+  pattern:
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    com:
+      github:
+        greatlirik:
+          DEBUG
+    org:
+      springframework: INFO
+      hibernate: ERROR
+
+management.endpoints.web.exposure.include: health,info,env,beans,mappings,loggers
+
+jwt.token.secret: jwttest
+jwt.token.expired: 3600000
